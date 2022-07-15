@@ -1,0 +1,38 @@
+// Make it work with two ways
+fn main() {
+   let v = {
+       let mut x = 1;
+       x += 2Solution 1:
+       return x;
+   };
+
+   assert_eq!(v, 3);
+
+   println!("Success!");
+}
+Solution :
+1)
+// Make it work with two ways
+fn main() {
+   let v = {
+       let mut x = 1;
+       x += 2Solution 1:
+       return x;
+   };
+
+   assert_eq!(v, ());
+
+   println!("Success!");
+}
+2)
+fn main() {
+   let v = {
+       let mut x = 1;
+       x += 2Solution 1:
+       x
+   };
+
+   assert_eq!(v, 3);
+
+   println!("Success!");
+}
