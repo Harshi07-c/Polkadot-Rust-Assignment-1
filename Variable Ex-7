@@ -1,0 +1,19 @@
+
+fn main() {
+    let x = 1; 
+}
+
+// Warning: unused variable: `x`
+
+Solution-1:
+fn main() {
+    let x = 1; 
+    println!("{}",x);
+    
+}
+ Solution-2:
+ fn main() {
+    let mut x = 1; 
+    x+=2;
+    
+}
